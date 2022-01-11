@@ -1,0 +1,46 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+#connect-orcid-button {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#orcid-id-logo {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.orcid_icon {
+  display: inline-block;
+  margin-right: 0.25em;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.orcid-failure {
+  width: 100%;
+  background: #f6d8ce;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.orcid-success {
+  width: 100%;
+  background: #e6f8e0;
+  border: 1px solid #3adf00;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.pager .next a{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

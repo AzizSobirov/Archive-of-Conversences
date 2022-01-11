@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Archives | Archive of Conferences</title>
+  </head>
+  <body class="pkp_page_index pkp_op_index">
+    <div class="pkp_structure_page">
+      <nav
+        id="accessibility-nav"
+        class="sr-only"
+        role="navigation"
+        aria-label="Quick jump to page content"
+      ></nav>
+      <header
+        class="navbar navbar-default"
+        id="headerNavigationContainer"
+        role="banner"
+      ></header>
+
+      <div class="pkp_structure_content container">
+        <main
+          class="pkp_structure_main col-xs-12 col-sm-10 col-md-8"
+          role="main"
+        >
+          <div id="main-content" class="page page_login">
+            <nav
+              class="cmp_breadcrumbs"
+              role="navigation"
+              aria-label="You are here:"
+            >
+              <ol class="breadcrumb">
+                <li>
+                  <a
+                    href="https://conferencepublication.com/index.php/aoc/index"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="active">Login</li>
+              </ol>
+            </nav>
+
+            <form
+              class="pkp_form login"
+              id="login"
+              method="post"
+              action="https://conferencepublication.com/index.php/aoc/login/signIn"
+            >
+              <input
+                type="hidden"
+                name="csrfToken"
+                value="ee70121e4265297b90561ebd054118e0"
+              />
+              <input type="hidden" name="source" value="" />
+
+              <div class="form-group">
+                <label for="login-username"> Username </label>
+                <input
+                  type="text"
+                  name="username"
+                  class="form-control"
+                  id="login-username"
+                  placeholder="Username"
+                  value=""
+                  maxlenght="32"
+                  required=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="login-password"> Password </label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="login-password"
+                  placeholder="Password"
+                  password="true"
+                  maxlength="32"
+                  required="$passwordRequired"
+                />
+              </div>
+
+              <div class="form-group">
+                <a
+                  href="../pages/forgot-password.html"
+                >
+                  Forgot your password?
+                </a>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="remember"
+                    id="remember"
+                    value="1"
+                    checked="$remember"
+                  />
+                  Keep me logged in
+                </label>
+              </div>
+
+              <div class="buttons">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </div>
+          <!-- .page -->
+        </main>
+        <aside
+          id="sidebar"
+          class="pkp_structure_sidebar left col-xs-12 col-sm-2 col-md-4"
+          role="complementary"
+          aria-label="Sidebar"
+        ></aside>
+        <!-- pkp_sidebar.left -->
+      </div>
+
+      <footer class="footer" role="contentinfo"></footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?v=3.2.0.3"
+      type="text/javascript"
+    ></script>
+    <script
+      src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js?v=3.2.0.3"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://d3js.org/d3.v4.js?v=3.2.0.3"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js?v=3.2.0.3"
+      type="text/javascript"
+    ></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
