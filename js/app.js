@@ -32,21 +32,21 @@ aside.innerHTML = `
   <ul>
     <li>
       <a
-        href="/index.php/aoc/gateway/plugin/WebFeedGatewayPlugin/atom"
+        href="/"
       >
         <img src="../img/atom.svg" alt="Atom logo" />
       </a>
     </li>
     <li>
       <a
-        href="/index.php/aoc/gateway/plugin/WebFeedGatewayPlugin/rss2"
+        href="/"
       >
         <img src="../img/rss20_logo.svg" alt="RSS2 logo" />
       </a>
     </li>
     <li>
       <a
-        href="/index.php/aoc/gateway/plugin/WebFeedGatewayPlugin/rss"
+        href="/"
       >
         <img src="../img/rss10_logo.svg" alt="RSS1 logo" />
       </a>
@@ -262,101 +262,90 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let header = document.getElementById("headerNavigationContainer");
-header.innerHTML = `
+header.innerHTML = `<div class="container-fluid">
+<div class="navbar-header">
+  <button
+    type="button"
+    class="navbar-toggle collapsed"
+    data-toggle="collapse"
+    data-target="#nav-menu"
+    aria-expanded="false"
+    aria-controls="nav-menu"
+  >
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
-        <div class="container-fluid">
-          <div class="row">
-            <nav aria-label="User Navigation">
-              <ul id="navigationUser" class="nav nav-pills tab-list pull-right">
-                <li class="">
-                  <a href="/pages/login.html"> Login </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- .row -->
-        </div>
-        <!-- .container-fluid -->
+  <h1 class="site-name">
+    <a href="/" class="navbar-brand">Archive of Conferences</a>
+  </h1>
+</div>
 
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#nav-menu"
-              aria-expanded="false"
-              aria-controls="nav-menu"
-            >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+<nav
+  id="nav-menu"
+  class="navbar-collapse collapse"
+  aria-label="Site Navigation"
+  aria-expanded="false"
+  style="height: 1px"
+>
+  <ul id="main-navigation" class="nav navbar-nav">
+    <li class="">
+      <a href="/"> Current </a>
+    </li>
+    <li class="">
+      <a href="/pages/archives.html"> Archives </a>
+    </li>
+    <li class="">
+      <a href="/pages/call-for-papers.html"> Call for Papers </a>
+    </li>
+    <li class="dropdown">
+      <a
+        href="#"
+        class="dropdown-toggle"
+        role="button"
+        id="dropdownMenuLink"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        About
+        <span class="caret"></span>
+      </a>
 
-            <h1 class="site-name">
-              <a
-                href="/"
-                class="navbar-brand"
-                >Archive of Conferences</a
-              >
-            </h1>
-          </div>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li class="dropdown-item">
+          <a href="/pages/submissions.html"> Submissions </a>
+        </li>
+        <li class="dropdown-item">
+          <a href="/pages/contact.html"> Contact </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
 
-          <nav
-            id="nav-menu"
-            class="navbar-collapse collapse"
-            aria-label="Site Navigation"
-            aria-expanded="false"
-            style="height: 1px"
-          >
-            <ul id="main-navigation" class="nav navbar-nav">
-              <li class="">
-                <a href="/"> Current </a>
-              </li>
-              <li class="">
-                <a href="/pages/archives.html"> Archives </a>
-              </li>
-              <li class="">
-                <a href="/pages/call-for-papers.html"> Call for Papers </a>
-              </li>
-              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About
-              <span class="caret"></span>
-            </a>
-          
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li class="dropdown-item">
-                    <a href="/pages/submissions.html"> Submissions </a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="/pages/contact.html"> Contact </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <div class="pull-md-right">
-              <form
-                class="navbar-form navbar-left"
-                role="search"
-                method="post"
-                action="/index.php/aoc/search/search"
-              >
-                <div class="form-group">
-                  <input
-                    class="form-control"
-                    name="query"
-                    value=""
-                    type="text"
-                    aria-label="Search Query"
-                    placeholder=""
-                  />
-                </div>
-                <button type="submit" class="btn btn-default">Search</button>
-              </form>
-            </div>
-          </nav>
-        </div>
+  <div class="pull-md-right">
+    <form
+      class="navbar-form navbar-left"
+      role="search"
+      method="post"
+      action="/index.php/aoc/search/search"
+    >
+      <div class="form-group">
+        <input
+          class="form-control"
+          name="query"
+          value=""
+          type="text"
+          aria-label="Search Query"
+          placeholder="Search"
+        />
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+      <a class="btn btn-default" href="/pages/login.html"> Login </a>
+    </form>
+  </div>
+</nav>
+</div>
 `;

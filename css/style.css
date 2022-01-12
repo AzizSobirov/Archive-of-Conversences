@@ -1,4 +1,58 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 5vw;
+  height: 50px;
+  width: 100vw;
+  border: none;
+  border-radius: 0px;
+  z-index: 3;
+}
+.navbar-form.navbar-left {
+  height: 45px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-form.navbar-left input,
+.navbar-form.navbar-left button,
+.navbar-form.navbar-left a {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-form.navbar-left a {
+  border: 1px solid #f6d8ce;
+}
+
+
+.pkp_structure_content.container {
+  margin: 70px auto;
+}
+
 #connect-orcid-button {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -38,9 +92,31 @@
   margin-bottom: 15px;
 }
 
-.pager .next a{
+.pager .next a {
   gap: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media (max-width:999px) {
+  .navbar{
+    padding: 0 ;
+  }
+  .navbar-collapse{
+    margin: 0 0;
+    width: 100vw;
+    background: #333;
+  }
+  .navbar-form.navbar-left{
+    height: 60px;
+    justify-content: flex-start;
+  }
+  .navbar-form.navbar-left a{
+    margin-left: 100px;
+  }
+  .pkp_structure_content.container{
+    margin: 50px 0;
+  }
 }
